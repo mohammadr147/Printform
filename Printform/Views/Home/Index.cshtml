@@ -1,0 +1,186 @@
+﻿@{
+    ViewData["Title"] = "جدول آنالیز";
+}
+@model AnalysisViewModel
+
+
+
+
+<div>
+
+
+    <div>
+        <h1>فرم آنالیز محصولات بذری بعد از بوجاری</h1>
+        <div id="left" class="detail">
+            <p>
+                @Html.LabelFor(m=>m.productAnalysisModel.LabRegistrationNumber)
+                <span>@Html.DisplayFor(m => m.productAnalysisModel.LabRegistrationNumber)</span>
+            </p>
+            <p>
+                @Html.LabelFor(m=>m.productAnalysisModel.ProductRegistrationNumber)
+                <span>@Html.DisplayFor(m => m.productAnalysisModel.ProductRegistrationNumber)</span>
+            </p>
+            <p>
+                @Html.LabelFor(m=>m.productAnalysisModel.SampleCode)
+                <span>@Html.DisplayFor(m => m.productAnalysisModel.SampleCode)</span>
+            </p>
+            <p>
+                @Html.LabelFor(m=>m.productAnalysisModel.DocumentNumber)
+                <span>@Html.DisplayFor(m => m.productAnalysisModel.DocumentNumber)</span>
+            </p>
+        </div>
+        <div id="right" class="detail" dir="rtl">
+            <p>
+                @Html.LabelFor(m=>m.productAnalysisModel.SampleReceiptDate) 
+                <span>@Html.DisplayFor(m => m.productAnalysisModel.SampleReceiptDate)</span>
+            </p>
+            <p>
+                @Html.LabelFor(m=>m.productAnalysisModel.SampleWeight)
+                <span>@Html.DisplayFor(m => m.productAnalysisModel.SampleWeight)</span>
+            </p>
+            <p>
+                @Html.LabelFor(m=>m.productAnalysisModel.TestCompletionDate)
+                <span>@Html.DisplayFor(m => m.productAnalysisModel.TestCompletionDate)</span>
+            </p>
+            <p>
+                @Html.LabelFor(m=>m.productAnalysisModel.ProductType) 
+                <span>@Html.DisplayFor(m => m.productAnalysisModel.ProductType)</span>
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+    <table>
+        <tr>
+            <th id="a"></th>
+            <th>@Html.LabelFor(m=> m.analysisFormModel.SeedPureWeight)</th>
+            <th>@Html.LabelFor(m=> m.analysisFormModel.WeightOfTotalImpurityComponents)</th>
+            <th></th>
+            <th id="a"></th>
+
+
+        </tr>
+        <tr>
+            <td rowspan="3" class="merge">@Html.LabelFor(m=> m.analysisFormModel.PercentageWeightOfComponents) </td>
+            <td colspan="3">@Html.LabelFor(m=> m.analysisFormModel.SeedPurityPercentageReduction)</td>
+            <td rowspan="3" class="merge"> @Html.LabelFor(m=> m.analysisFormModel.ArmonSeedCount) </td>
+
+
+        </tr>
+        <tr>
+            <td colspan="3">ماکزیموم 5% آزمون مجدد نیاز دارد    نیاز ندارد </td>
+
+        </tr>
+        <tr>
+            <td colspan="3">@Html.LabelFor(m=> m.analysisFormModel.OtherProductAndVarietySeedType)</td>
+        </tr>
+    </table>
+
+
+    <table>
+        <tr>
+            <th>@Html.LabelFor(m=> m.analysisFormModel.SeedTestType) </th>
+            <th>@Html.LabelFor(m=> m.analysisFormModel.Weight)</th>
+            <th>@Html.LabelFor(m=> m.analysisFormModel.WidthPercentageReduction)</th>
+            <th>@Html.LabelFor(m=> m.analysisFormModel.SolidMaterialsType) </th>
+            <th>@Html.LabelFor(m=> m.analysisFormModel.SolidMaterialsTypeCount)</th>
+            <th>@Html.LabelFor(m=> m.analysisFormModel.WeedSeedType) </th>
+            <th>@Html.LabelFor(m=> m.analysisFormModel.WeedSeedTypeCount)</th>
+            <th>@Html.LabelFor(m=> m.analysisFormModel.SolidMaterialsType) </th>
+            <th>@Html.LabelFor(m=> m.analysisFormModel.SolidMaterialsTypeCount)</th>
+            <th>@Html.LabelFor(m=> m.analysisFormModel.WeedSeedType) </th>
+            <th>@Html.LabelFor(m=> m.analysisFormModel.WeedSeedTypeCount)</th>
+
+
+
+
+
+        </tr>
+        <tr>
+            <td>بذر خالص</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>بذر سایر محصولات و ارقام</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>بذر علف هرز</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>مواد جامد</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>مجموع</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>نوع مواد جامد</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+
+    </table>
+
+    <button onclick="printPage()">چاپ</button>
+
+</div>
