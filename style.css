@@ -1,0 +1,152 @@
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 12px;
+    padding: 40px;
+    margin-top: 0;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+h1,
+h2,
+ h3 {
+    text-align: center;
+    margin: 16px 0;
+}
+
+p {
+    margin: 8px 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+
+}
+
+#a {
+    visibility: hidden;
+}
+
+button{
+  
+    margin-top:15px;
+    margin-bottom: 40px;
+    float: left;
+    width:max-content;
+}
+.detail-line{
+    display: flex;
+    flex-direction: row;
+}
+.top-table-head{
+    display: inline-block;
+    rotate: -90deg;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#first{
+    width: 280px;
+}
+#vertical{
+    display: inline-block;
+    rotate: -90deg;
+    margin-top: 60px;
+}
+
+#sign{
+    margin-top: 50px;
+    margin-right: 600px;
+
+    
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+}
+.date{
+    margin-left: 300px;
+}
+@media print {
+    @page {
+        size: A4  landscape; /* تنظیم نوع صفحه به landscape و اندازه کاغذ A4 */
+        margin: 0;
+        margin-top: 0;
+    }
+
+    body {
+        width: 100%; /* تنظیم عرض صفحه به اندازه عرض کاغذ A4 */
+        height: 100%; /* تنظیم ارتفاع صفحه به اندازه ارتفاع کاغذ A4 */
+        margin: 0; /* مرکز کردن صفحه در وسط کاغذ */
+        overflow: hidden;
+        transform: scale(0.6);        
+    }   
+
+    /* محتوای صفحه را در موقعیت اولین صفحه چاپ قرار می‌دهد */
+    @page:first {
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
